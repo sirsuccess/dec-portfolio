@@ -1,0 +1,38 @@
+
+.brand-name span{
+    color: rgb(252,114,30)
+}
+.brand-name{
+    margin-right: auto;
+    text-transform: uppercase;
+    align-self: center;
+    font-size: 30px;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes flip{
+0%{
+    -webkit-transform: perspective(400px) rotateY(90deg);
+transform: perspective(400px) rotateY(90deg);
+opacity: 0;
+}
+40% {
+    -webkit-transform: perspective(400px) rotateY(-20deg);
+    transform: perspective(400px) rotateY(-20deg);
+}
+60% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
+    opacity: 1;
+}
+80% {
+    -webkit-transform: perspective(400px) rotateY(-5deg);
+    transform: perspective(400px) rotateY(-5deg);
+}
+100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+}
+}
