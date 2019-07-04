@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- include navbar file -->
+    <div w3-include-html="header.html"></div>
+
+    <div class="main">
+        <div class="profile-image"> <img src="./img/profile-pix.jpg" alt="profile picture"></div>
+        <div class="welcome-main">
+            <p>Hello! I'm Amani Kanu,
+                A <span> fullstack web developer</span>. I developed fullstack web applications,
+                with the latest technologies. These include Clean Code, RESTful APIs, beautiful Static and Dynamic Web Apps,
+                Single Page Website etc. that can scale up and down in any screen size. Check my github profile.
+            </p>
+
+            <div class="social">
+                <a href="https://github.com/sirsuccess" target="_blank" title="Github"><button> <i
+                            class="fab fa-github"></i>
+                    </button>
+                </a>
+                <a href="https://codepen.io/amani-kanu/" target="_blank" title="Codepen"> <i
+                        class="fab fa-codepen"></i></a>
+                <a href="http://www.linkedin.com/in/amani-kanu" target="_blank" title="linkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/2348160916203" target="_blank" title="Whatsapp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script> includeHTML() </script>
 </body>
+
 </html>
