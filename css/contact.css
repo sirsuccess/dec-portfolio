@@ -1,0 +1,17 @@
+.small-container{
+    width: 60%;
+    margin: 7em auto;
+    margin-bottom: 5em;
+}
+.small-container h2{
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+.small-line{
+    height: 4px;
+    width: 15%;
+    /* background-color: green; */
+    margin-bottom: 2em;
+    margin-top: -0.5em;
+    border-radius: 20px
+}
