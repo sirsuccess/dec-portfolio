@@ -1,0 +1,23 @@
+footer{
+    width: 70%;
+    margin: 1em auto;
+  }
+  .footer-items{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-media{
+    display: flex;
+    /* align-content: center; */
+  }
+  .social-media img{
+    width: 20px;
+    height: 20px;
+  }
+
+  @media only screen and (max-width: 900px){
+    .footer-items{
+      flex-direction: column;
+    }
+  }
