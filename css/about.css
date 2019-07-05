@@ -1,5 +1,15 @@
 .container{
-    margin-top: 10em;
+    margin-top: 8em;
     margin-bottom: 10em;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+.row{
+    margin-bottom: 3em;
+}
+
+li{
+    margin-bottom: 1em;
+}
+.institution{
+    font-weight: bold;
 }
