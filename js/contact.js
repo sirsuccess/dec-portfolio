@@ -1,13 +1,35 @@
 $( document ).ready(function() {
-    $("#submit").on("click", (e)=>{
-        e.preventDefault()
+    form = $("#form-submit")
+    form.submit( (e)=>{
         console.log("yes i can see");
         let name = $("#name").val()
         let phone = $("#phone").val()
         let email = $("#email").val()
         let subject = $("#subject").val()
         let message = $("#message").val()
-        console.log(name+phone+email+subject+message)
+        body ={
+            
+            name,
+            phone,
+            email,
+            subject,
+            message
+        }
+        console.log(body)
+
+        if(!name|| !phone || !email || !subject){
+            alert("please check your entries")
+        }else{
+            $.ajax({
+                url: "https://formspree.io/kanuamani@gmail.com",
+                method: "POST",
+                data: $(this).serialize(),
+                dataType: "json",
+            })
+            e.preventDefault()
+            alert(name+" your message has been sent successfully, thank you for getting in touch with me")
+            form.trigger("reset");
+        }
         // Email.send({
         //     Host : "smtp.yourisp.com",
         //     Server : "smtp.elasticemail.com",
