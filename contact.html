@@ -12,7 +12,7 @@
     <div class="small-container">
         <h2>Get in touch</h2>
         <div class="small-line bg-warning"></div>
-        <form class="validateForm" action="">
+        <form class="validateForm" action="https://formspree.io/email@domain.tld" method="POST">
             <div class="row">
                 <div class="col-md-4 form-group">
                     FULL NAME <br>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-4 form-group">
                     EMAIL<br>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email address" required>
+                    <input type="email" name="_replyto" class="form-control" id="email" placeholder="Enter email address" required>
                 </div>
             </div>
 
@@ -42,6 +42,7 @@
 
             <button type="submit" id="submit" class="btn btn-primary">Send Message </button>
         </form>
+
     </div>
     <!-- include footer file -->
     <div w3-include-html="footer.html"></div>

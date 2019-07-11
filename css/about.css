@@ -13,3 +13,20 @@ li{
 .institution{
     font-weight: bold;
 }
+
+
+.progress {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    width: 0;
+  }
+  
+  .bg-purple {
+    background-color: #825CD6 !important;
+  }
+  
+  .progress .progress-bar {
+    transition: unset;
+  }
