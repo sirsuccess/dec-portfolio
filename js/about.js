@@ -1,3 +1,12 @@
+
+
+$( document ).ready(function() {
+  $(".about").css({
+    backgroundColor: "rgb(252,114,30)",
+    color: "black",
+    borderRadius: "10px",
+    padding: "8px"
+  })
 var delay = 500;
 $(".progress-bar").each(function(i) {
   $(this).delay(delay * i).animate({
@@ -14,3 +23,4 @@ $(".progress-bar").each(function(i) {
     }
   });
 });
+})

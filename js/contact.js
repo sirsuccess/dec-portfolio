@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    $(".contact").css({
+        backgroundColor: "rgb(252,114,30)",
+        color: "black",
+        borderRadius: "10px",
+        padding: "8px"
+      })
     form = $("#form-submit")
     form.submit( (e)=>{
         console.log("yes i can see");

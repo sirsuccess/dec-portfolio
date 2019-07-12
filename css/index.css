@@ -21,6 +21,9 @@ img{
 .brand-name span{
     color: rgb(252,114,30)
 }
+.hover:hover{
+ color: rgb(252,114,30) !important;
+}
 .brand-name{
     margin-right: auto;
     text-transform: uppercase;
@@ -125,6 +128,24 @@ transition: 2s;
     opacity: 1;
     transition: ease-in 2s;
 } */
+
+#project{
+ width: 80%;
+ margin: 0 auto;
+ height: 400px;
+}
+#project .card{
+    
+    color: #ffffff;
+    
+}
+.card1{
+    /* width: 200px; */
+    height: 400px;
+    background-image: url("/img/food.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 
